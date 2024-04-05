@@ -10,9 +10,9 @@ import SwiftData
 
 @main
 struct Tests_CIApp: App {
-    var sharedModelContainer: ModelContainer = {
+    var container: ModelContainer = {
         let schema = Schema([
-            Item.self,
+            Item.self
         ])
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
 
@@ -25,8 +25,8 @@ struct Tests_CIApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(modelContext: container.mainContext)
         }
-        .modelContainer(sharedModelContainer)
+        .modelContainer(container)
     }
 }
