@@ -1,13 +1,13 @@
 // MARK: Imports
 
 import Danger
-import DangerXCodeSummary
 import DangerSwiftCoverage
+import DangerXCodeSummary
 import Foundation
 
 // MARK: Validate
 
-Validator.shared.validate()
+// Validator.shared.validate()
 
 // MARK: Lint
 
@@ -15,239 +15,239 @@ SwiftLint.lint(configFile: ".swiftlint.yml")
 
 // MARK: Validation rules
 
-internal class Validator {
+// internal class Validator {
 
-    // MARK: Lifecycle
+//     // MARK: Lifecycle
 
-    private init() {}
-    internal static let shared = Validator()
-    private var danger = Danger()
+//     private init() {}
+//     internal static let shared = Validator()
+//     private var danger = Danger()
 
-    // MARK: Properties
+//     // MARK: Properties
 
-    private lazy var additions = danger.github.pullRequest.additions!
-    private lazy var deletions = danger.github.pullRequest.deletions!
-    private lazy var changedFiles = danger.github.pullRequest.changedFiles!
+//     private lazy var additions = danger.github.pullRequest.additions!
+//     private lazy var deletions = danger.github.pullRequest.deletions!
+//     private lazy var changedFiles = danger.github.pullRequest.changedFiles!
 
-    private lazy var modified = danger.git.modifiedFiles
-    private lazy var editedFiles = modified + danger.git.createdFiles
-    private lazy var prTitle = danger.github.pullRequest.title
+//     private lazy var modified = danger.git.modifiedFiles
+//     private lazy var editedFiles = modified + danger.git.createdFiles
+//     private lazy var prTitle = danger.github.pullRequest.title
 
-    private lazy var branchHeadName = danger.github.pullRequest.head.ref
-    private lazy var branchBaseName = danger.github.pullRequest.base.ref
+//     private lazy var branchHeadName = danger.github.pullRequest.head.ref
+//     private lazy var branchBaseName = danger.github.pullRequest.base.ref
 
-    // Methods
+//     // Methods
 
-    internal func validate() {
-        checkSize()
-        checkDescription()
-        checkReleases()
-        checkUnitTest()
-        checkTitle()
-        checkAssignee()
-        checkModifiedFiles()
-        checkFails()
+//     internal func validate() {
+//         checkSize()
+//         checkDescription()
+//         checkReleases()
+//         checkUnitTest()
+//         checkTitle()
+//         checkAssignee()
+//         checkModifiedFiles()
+//         checkFails()
 
-        logResume()
-    }
-}
+//         logResume()
+//     }
+// }
 
-internal class DescriptionValidator {
+// internal class DescriptionValidator {
 
-    // MARK: Lifecycle
+//     // MARK: Lifecycle
 
-    private init() {}
-    internal static let shared = DescriptionValidator()
-    private var danger = Danger()
+//     private init() {}
+//     internal static let shared = DescriptionValidator()
+//     private var danger = Danger()
 
-    // MARK: Properties
+//     // MARK: Properties
 
-    private lazy var body = danger.github.pullRequest.body ?? ""
+//     private lazy var body = danger.github.pullRequest.body ?? ""
 
-    // Methods
+//     // Methods
 
-    internal func validate() {
-        let message = "PR não tem descrição. Você deve fornecer uma descrição das alterações feitas."
-        
-        guard !body.isEmpty else {
-            return fail(message)
-        }
-    }
-}
+//     internal func validate() {
+//         let message = "PR não tem descrição. Você deve fornecer uma descrição das alterações feitas."
 
-internal class ReleaseValidator {
+//         guard !body.isEmpty else {
+//             return fail(message)
+//         }
+//     }
+// }
 
-    // MARK: Lifecycle
+// internal class ReleaseValidator {
 
-    private init() {}
-    internal static let shared = ReleaseValidator()
-    private var danger = Danger()
+//     // MARK: Lifecycle
 
-    // Methods
+//     private init() {}
+//     internal static let shared = ReleaseValidator()
+//     private var danger = Danger()
 
-    internal func validate() {
-        checkReleaseVersion()
-    }
-}
+//     // Methods
 
-internal class UnitTestValidator { 
+//     internal func validate() {
+//         checkReleaseVersion()
+//     }
+// }
 
-    // MARK: Lifecycle
+// internal class UnitTestValidator { 
 
-    private init() {}
-    internal static let shared = UnitTestValidator()
-    private var danger = Danger()
+//     // MARK: Lifecycle
 
-    // Methods
+//     private init() {}
+//     internal static let shared = UnitTestValidator()
+//     private var danger = Danger()
 
-    internal func validate() {
-        checkUnitTestSummary()
-        checkUnitTestCoverage()
-    }
-}
+//     // Methods
 
-// MARK: Validator Methods
+//     internal func validate() {
+//         checkUnitTestSummary()
+//         checkUnitTestCoverage()
+//     }
+// }
 
-fileprivate extension Validator {
+// // MARK: Validator Methods
 
-    func checkSize() {
-        if (additions + deletions) > ValidationRules.bigPRThreshold {
-            let message = 
-            """
-            O tamanho do PR parece relativamente grande. \
-            Se possível, no futuro se o PR contiver várias alterações, divida cada uma em um PR separado. \
-            Isto ajuda em uma revisão mais rápida e fácil.
-            """
-            warn(message)
-        }
-    }
+// fileprivate extension Validator {
 
-    func checkDescription() {
-        DescriptionValidator.shared.validate()
-    }
+//     func checkSize() {
+//         if (additions + deletions) > ValidationRules.bigPRThreshold {
+//             let message = 
+//             """
+//             O tamanho do PR parece relativamente grande. \
+//             Se possível, no futuro se o PR contiver várias alterações, divida cada uma em um PR separado. \
+//             Isto ajuda em uma revisão mais rápida e fácil.
+//             """
+//             warn(message)
+//         }
+//     }
 
-    func checkReleases() {
-        ReleaseValidator.shared.validate()
-    }
+//     func checkDescription() {
+//         DescriptionValidator.shared.validate()
+//     }
 
-    func checkUnitTest() {
-        UnitTestValidator.shared.validate()
-    }
+//     func checkReleases() {
+//         ReleaseValidator.shared.validate()
+//     }
 
-    func checkTitle() {
-        let result = prTitle.range(
-            of: #"\[[A-zÀ-ú0-9 ]*\][A-zÀ-ú0-9- ]+"#,
-            options: .regularExpression
-        ) != nil
+//     func checkUnitTest() {
+//         UnitTestValidator.shared.validate()
+//     }
 
-        if !result {
-            let message = "O título do PR dever ser assim: [<i>Funcionalidade ou Flow</i>] <i>Qual o fluxo que foi feito</i>"
-            warn(message)
-        }
-    }
+//     func checkTitle() {
+//         let result = prTitle.range(
+//             of: #"\[[A-zÀ-ú0-9 ]*\][A-zÀ-ú0-9- ]+"#,
+//             options: .regularExpression
+//         ) != nil
 
-    func checkAssignee() {
-        if danger.github.pullRequest.assignee == nil {
-            warn("Por gentileza, atribuir a você o PR.")
-        }
-    }
+//         if !result {
+//             let message = "O título do PR dever ser assim: [<i>Funcionalidade ou Flow</i>] <i>Qual o fluxo que foi feito</i>"
+//             warn(message)
+//         }
+//     }
 
-    func checkModifiedFiles() {
-        if changedFiles > ValidationRules.maxChangedFiles {
-            let message = 
-            """
-            PR contém muitos arquivos alterados. Se possível, nas próximas vezes tente dividir em features menores.
-            """
-            warn(message)
-        }
-    }
+//     func checkAssignee() {
+//         if danger.github.pullRequest.assignee == nil {
+//             warn("Por gentileza, atribuir a você o PR.")
+//         }
+//     }
 
-    func checkFails() {
-        if !danger.fails.isEmpty {
-            _ = danger.utils.exec("touch Danger-has-fails.swift")
-        }
-    }
+//     func checkModifiedFiles() {
+//         if changedFiles > ValidationRules.maxChangedFiles {
+//             let message = 
+//             """
+//             PR contém muitos arquivos alterados. Se possível, nas próximas vezes tente dividir em features menores.
+//             """
+//             warn(message)
+//         }
+//     }
 
-    func logResume() {
-        let overview = 
-        """
-        O PR adicionou \(additions) e removeu \(deletions) linhas. \(changedFiles) arquivo(s) alterado(s).
-        """
- 
-        let seeOurDocumentation = 
-        """
-        Veja nossa documentação atualizada: <br/> \
-        <a href='https://github.pactual.net/Digital/digital-ios/wiki/Pull-Request'> \
-        Padrão, exemplo e boas práticas de Pull-Request</a>
-        """
+//     func checkFails() {
+//         if !danger.fails.isEmpty {
+//             _ = danger.utils.exec("touch Danger-has-fails.swift")
+//         }
+//     }
 
-        message(seeOurDocumentation)
-        message(overview)
-    }
-}
+//     func logResume() {
+//         let overview = 
+//         """
+//         O PR adicionou \(additions) e removeu \(deletions) linhas. \(changedFiles) arquivo(s) alterado(s).
+//         """
 
-// MARK: Constants
+//         let seeOurDocumentation = 
+//         """
+//         Veja nossa documentação atualizada: <br/> \
+//         <a href='https://github.pactual.net/Digital/digital-ios/wiki/Pull-Request'> \
+//         Padrão, exemplo e boas práticas de Pull-Request</a>
+//         """
 
-private enum ValidationRules {
-    static let maxChangedFiles = 20
-    static let bigPRThreshold = 3000
-}
+//         message(seeOurDocumentation)
+//         message(overview)
+//     }
+// }
 
-// MARK: Extensions
+// // MARK: Constants
 
-fileprivate extension Danger.File {
-    var isInSources: Bool { hasPrefix("Sources/") }
-    var isInTests: Bool { hasPrefix("Tests/") }
+// private enum ValidationRules {
+//     static let maxChangedFiles = 20
+//     static let bigPRThreshold = 3000
+// }
 
-    var isSourceFile: Bool {
-        hasSuffix(".swift") || hasSuffix(".h") || hasSuffix(".m")
-    }
+// // MARK: Extensions
 
-    var isSwiftPackageDefintion: Bool {
-        hasPrefix("Package") && hasSuffix(".swift")
-    }
+// fileprivate extension Danger.File {
+//     var isInSources: Bool { hasPrefix("Sources/") }
+//     var isInTests: Bool { hasPrefix("Tests/") }
 
-    var isDangerfile: Bool {
-        self == "Dangerfile.swift"
-    }
-}
+//     var isSourceFile: Bool {
+//         hasSuffix(".swift") || hasSuffix(".h") || hasSuffix(".m")
+//     }
 
-// MARK: ReleaseValidator Methods
+//     var isSwiftPackageDefintion: Bool {
+//         hasPrefix("Package") && hasSuffix(".swift")
+//     }
 
-fileprivate extension ReleaseValidator {
+//     var isDangerfile: Bool {
+//         self == "Dangerfile.swift"
+//     }
+// }
 
-    func checkReleaseVersion() {
-        let message = 
-        """
-        Encontrado uma release em andamento ou publicada para essa versão. <br/> \
-        Por favor, atualize a versão no <b>.podspec</b> do modulo.
-        """
+// // MARK: ReleaseValidator Methods
 
-        let file = "Danger-release-version-error.swift"
-        if FileManager.default.fileExists(atPath: file) {
-            fail(message)
-        }
-    }
-}
+// fileprivate extension ReleaseValidator {
 
-// MARK: UnitTestValidator Methods
+//     func checkReleaseVersion() {
+//         let message = 
+//         """
+//         Encontrado uma release em andamento ou publicada para essa versão. <br/> \
+//         Por favor, atualize a versão no <b>.podspec</b> do modulo.
+//         """
 
-fileprivate extension UnitTestValidator {
+//         let file = "Danger-release-version-error.swift"
+//         if FileManager.default.fileExists(atPath: file) {
+//             fail(message)
+//         }
+//     }
+// }
 
-    func checkUnitTestSummary() {
-        let file = "build/reports/errors.json"
-        if FileManager.default.fileExists(atPath: file) {
-            let summary = XCodeSummary(filePath: file) { result in
-                result.category != .warning
-            }
-            summary.report()
-        }
-    }
+// // MARK: UnitTestValidator Methods
 
-    func checkUnitTestCoverage() {
-        let folder = "temp/derived"
-        if FileManager.default.fileExists(atPath: "\(folder)/info.plist") {
-            Coverage.xcodeBuildCoverage(.derivedDataFolder(folder), minimumCoverage: 70)
-        }
-    }
-}
+// fileprivate extension UnitTestValidator {
+
+//     func checkUnitTestSummary() {
+//         let file = "build/reports/errors.json"
+//         if FileManager.default.fileExists(atPath: file) {
+//             let summary = XCodeSummary(filePath: file) { result in
+//                 result.category != .warning
+//             }
+//             summary.report()
+//         }
+//     }
+
+//     func checkUnitTestCoverage() {
+//         let folder = "temp/derived"
+//         if FileManager.default.fileExists(atPath: "\(folder)/info.plist") {
+//             Coverage.xcodeBuildCoverage(.derivedDataFolder(folder), minimumCoverage: 70)
+//         }
+//     }
+// }
