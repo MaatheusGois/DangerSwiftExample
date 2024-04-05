@@ -9,6 +9,7 @@ lane :test do |options|
     derived_data_path: "temp/derived/",
     xcodebuild_formatter: "xcpretty -f `xcpretty-json-formatter`",
     code_coverage: true,
-    devices: ["platform=iOS Simulator,name=iPhone 14 pro"]
+    devices: ["iPhone 14 Pro Max"],
+    destination: "platform=iOS Simulator,id=72D088E1-E457-43F3-A481-8420294E4600",
   )
 end
