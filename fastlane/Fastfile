@@ -6,7 +6,6 @@ lane :test do |options|
   run_tests(
     project: "Tests-CI.xcodeproj", 
     scheme: "Tests-CI",
-    target: "Tests-CI",
     derived_data_path: "temp/derived/",
     xcodebuild_formatter: "xcpretty -f `xcpretty-json-formatter`",
     code_coverage: true,
