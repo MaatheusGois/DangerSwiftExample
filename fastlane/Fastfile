@@ -1,10 +1,13 @@
-import "./Modules.rb"
-import "./shared_lanes.rb"
-
 desc "Run the tests and prepare for Danger"
 lane :test do |options|
-  test_project(
-    project_path: "../Tests-CI",
-    project_name: "Tests-CI",
-    scheme: "Tests-CI")
+
+  # Const
+
+  run_tests(
+    project: "Tests-CI.xcodeproj", 
+    scheme: "Tests-CI",
+    derived_data_path: "temp/derived/",
+    xcodebuild_formatter: "xcpretty -f `xcpretty-json-formatter`",
+    code_coverage: true
+  )
 end
