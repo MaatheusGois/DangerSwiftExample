@@ -23,7 +23,7 @@ jobs:
         run: |
           brew install danger/tap/danger-js
           swift build
-          swift run danger-swift ci --verbose
+          swift run danger-swift --verbose
           echo "Danger Lint stage complete."
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
