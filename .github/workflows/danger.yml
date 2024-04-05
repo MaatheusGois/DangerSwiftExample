@@ -28,6 +28,11 @@ jobs:
         uses: maxim-lobanov/setup-xcode@v1
         with:
           xcode-version: '15.2'
+      
+      - name: Test Stage
+        run: |
+          bundle install
+          bundle exec fastlane test
 
       - name: Danger Stage
         run: |
