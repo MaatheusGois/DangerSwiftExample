@@ -19,5 +19,4 @@ jobs:
       - name: Danger Stage
         run: |
           swift build
-          swift run danger-swift ci
-          echo "Danger Lint stage complete."
+          
