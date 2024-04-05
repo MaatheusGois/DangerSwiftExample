@@ -21,6 +21,7 @@ jobs:
 
       - name: Danger Stage
         run: |
+          brew install danger/tap/danger-js
           swift build
-          swift run danger-swift ci
+          swift run danger-swift ci --verbose
           echo "Danger Lint stage complete."
