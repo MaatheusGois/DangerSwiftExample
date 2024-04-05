@@ -25,3 +25,5 @@ jobs:
           swift build
           swift run danger-swift ci --verbose
           echo "Danger Lint stage complete."
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
