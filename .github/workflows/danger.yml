@@ -8,15 +8,19 @@ on:
 
 jobs:
   Danger:
-    runs-on: ubuntu-latest
+    runs-on: macos-13
+
     steps:
-      - uses: actions/checkout@v3
-      - name: Danger
-        uses: 417-72KI/danger-swiftlint@v5.9
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Xcode
+        uses: maxim-lobanov/setup-xcode@v1
+        with:
+          xcode-version: '15.2'
 
       - name: Danger Stage
         run: |
           swift build
-          
+          swift run danger-swift ci
+          echo "Danger Lint stage complete."
