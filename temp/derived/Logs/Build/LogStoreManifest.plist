@@ -48,7 +48,7 @@
 			<key>uniqueIdentifier</key>
 			<string>1A8D82B6-1999-4F1A-B4CA-F6C201E2250F</string>
 		</dict>
-		<key>E0520022-0822-4AEF-865F-C9D0AA9AB23C</key>
+		<key>D17320F9-F774-4B70-AB55-2D9AEA3157B8</key>
 		<dict>
 			<key>className</key>
 			<string>IDECommandLineBuildLog</string>
@@ -57,7 +57,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>E0520022-0822-4AEF-865F-C9D0AA9AB23C.xcactivitylog</string>
+			<string>D17320F9-F774-4B70-AB55-2D9AEA3157B8.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -80,15 +80,15 @@
 			<key>schemeIdentifier-sharedScheme</key>
 			<integer>1</integer>
 			<key>signature</key>
-			<string>Building project Tests-CI with scheme Tests-CI</string>
+			<string>Building project Tests-CI for testing with scheme Tests-CI</string>
 			<key>timeStartedRecording</key>
-			<real>734054278.29183102</real>
+			<real>734055546.12234294</real>
 			<key>timeStoppedRecording</key>
-			<real>734054288.00866401</real>
+			<real>734055550.29787803</real>
 			<key>title</key>
-			<string>Building project Tests-CI with scheme Tests-CI</string>
+			<string>Building project Tests-CI for testing with scheme Tests-CI</string>
 			<key>uniqueIdentifier</key>
-			<string>E0520022-0822-4AEF-865F-C9D0AA9AB23C</string>
+			<string>D17320F9-F774-4B70-AB55-2D9AEA3157B8</string>
 		</dict>
 	</dict>
 </dict>
