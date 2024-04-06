@@ -5,12 +5,7 @@
     
     
       
-      <testcase classname="fastlane.lanes" name="0: Switch to test_project lane" time="0.000158">
-        
-      </testcase>
-    
-      
-      <testcase classname="fastlane.lanes" name="1: clear_derived_data" time="55.646341">
+      <testcase classname="fastlane.lanes" name="0: scan" time="115.794273">
         
       </testcase>
     

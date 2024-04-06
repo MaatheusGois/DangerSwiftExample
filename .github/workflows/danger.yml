@@ -1,13 +1,12 @@
 name: Danger
 
 on:
-  push:
-    branches: [ main, develop ]
   pull_request:
     branches: [ main, develop ]
 
 jobs:
   Danger:
+    permissions: write-all
     runs-on: macos-13
 
     steps:
@@ -18,12 +17,18 @@ jobs:
         uses: maxim-lobanov/setup-xcode@v1
         with:
           xcode-version: '15.2'
+      
+      - name: Test Stage
+        run: |
+          bundle install
+          bundle exec fastlane test
 
       - name: Danger Stage
         run: |
           brew install danger/tap/danger-js
           swift build
-          swift run danger-swift --verbose
+          swift run danger-swift ci --verbose
           echo "Danger Lint stage complete."
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          DANGER_GITHUB_API_TOKEN: ${{ secrets.DANGER_GITHUB_API_TOKEN }}

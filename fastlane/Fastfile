@@ -1,10 +1,9 @@
-import "./Modules.rb"
-import "./shared_lanes.rb"
-
 desc "Run the tests and prepare for Danger"
 lane :test do |options|
-  test_project(
-    project_path: "../Tests-CI",
-    project_name: "Tests-CI",
-    scheme: "Tests-CI")
+
+  scan(
+    derived_data_path: "temp/derived/",
+    result_bundle: true,
+    code_coverage: true
+  )
 end
