@@ -229,18 +229,18 @@ fileprivate extension ReleaseValidator {
 fileprivate extension UnitTestValidator {
     func checkUnitTestSummary() {
         let file = "./build/reports/errors.json"
-        if FileManager.default.fileExists(atPath: file) {
-            let summary = XCodeSummary(filePath: file) { result in
-                result.category != .warning
-            }
+        // if FileManager.default.fileExists(atPath: file) {
+        //     let summary = XCodeSummary(filePath: file) { result in
+        //         result.category != .warning
+        //     }
             summary.report()
-        }
+        // }
     }
 
     func checkUnitTestCoverage() {
         let folder = "./temp/derived"
-        if FileManager.default.fileExists(atPath: "\(folder)/info.plist") {
-            Coverage.xcodeBuildCoverage(.derivedDataFolder(folder), minimumCoverage: 70)
-        }
+        // if FileManager.default.fileExists(atPath: "\(folder)/info.plist") {
+        Coverage.xcodeBuildCoverage(.derivedDataFolder(folder), minimumCoverage: 70)
+        // }
     }
 }
