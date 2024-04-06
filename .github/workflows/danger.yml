@@ -21,6 +21,7 @@ jobs:
   Tests:
     permissions: write-all
     runs-on: macos-13
+    needs: Setup
 
     steps:
       - name: Test Stage
@@ -31,6 +32,7 @@ jobs:
   Danger:
     permissions: write-all
     runs-on: macos-13
+    needs: Tests
 
     steps:
       - name: Danger Stage
