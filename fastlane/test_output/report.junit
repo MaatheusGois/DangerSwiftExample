@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites tests="3" failures="0">
-    <testsuite name="Tests-CITests" tests="3" failures="0" skipped="0" time="0.011294960975646973">
+    <testsuite name="Tests-CITests" tests="3" failures="0" skipped="0" time="0.031443119049072266">
         <properties>
           <property name="Configuration" value="Test Scheme Action"/>
         </properties>
-        <testcase classname="ContentViewViewModelTests" name="testAppStartsEmpty()" time="0.0030449628829956055">
+        <testcase classname="ContentViewViewModelTests" name="testAppStartsEmpty()" time="0.003364086151123047">
         </testcase>
-        <testcase classname="ContentViewViewModelTests" name="testCreaatingAndRemoving()" time="0.005856990814208984">
+        <testcase classname="ContentViewViewModelTests" name="testCreaatingAndRemoving()" time="0.025501012802124023">
         </testcase>
-        <testcase classname="ContentViewViewModelTests" name="testCreatingSamplesWorks()" time="0.002393007278442383">
+        <testcase classname="ContentViewViewModelTests" name="testCreatingSamplesWorks()" time="0.0025780200958251953">
         </testcase>
     </testsuite>
 </testsuites>
