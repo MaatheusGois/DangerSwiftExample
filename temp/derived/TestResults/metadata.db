@@ -13,17 +13,17 @@
 				<key>testAppStartsEmpty</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.002593994140625</real>
+					<real>0.0023720264434814453</real>
 				</dict>
 				<key>testCreaatingAndRemoving</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.0042059421539306641</real>
+					<real>0.0038120746612548828</real>
 				</dict>
 				<key>testCreatingSamplesWorks</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.002223968505859375</real>
+					<real>0.0021569728851318359</real>
 				</dict>
 			</dict>
 		</dict>

@@ -3,7 +3,7 @@ lane :test do |options|
 
   scan(
     derived_data_path: "temp/derived/",
-    xcodebuild_formatter: "xcpretty -f `xcpretty-json-formatter`",
+    result_bundle: true,
     code_coverage: true
   )
 end

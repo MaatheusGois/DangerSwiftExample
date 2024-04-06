@@ -6,10 +6,10 @@
 	<integer>11</integer>
 	<key>logs</key>
 	<dict>
-		<key>078A09FD-F71F-490B-96CD-222F0C93BF94</key>
+		<key>5C186E74-6ACE-47FE-9B13-E79C77C90F46</key>
 		<dict>
 			<key>auxiliaryLogUniqueIdentifier</key>
-			<string>95EC1006-CB68-48D4-9329-79F84B272EE7</string>
+			<string>ECDE680A-6A28-41A2-A525-6E7E297036C9</string>
 			<key>auxiliaryObservable</key>
 			<dict>
 				<key>highLevelStatus</key>
@@ -30,7 +30,7 @@
 			<key>domainType</key>
 			<string>com.apple.dt.unit.cocoaUnitTest</string>
 			<key>fileName</key>
-			<string>Run-Tests-CI-2024.04.05_21-42-39--0300.xcresult</string>
+			<string>Run-Tests-CI-2024.04.05_21-54-52--0300.xcresult</string>
 			<key>hasAuxiliaryLog</key>
 			<true/>
 			<key>hasCoverageData</key>
@@ -61,76 +61,13 @@
 			<key>signature</key>
 			<string>Run Tests-CI</string>
 			<key>timeStartedRecording</key>
-			<real>734056959.03473306</real>
+			<real>734057692.64940798</real>
 			<key>timeStoppedRecording</key>
 			<real>0.0</real>
 			<key>title</key>
 			<string>Run Tests-CI</string>
 			<key>uniqueIdentifier</key>
-			<string>078A09FD-F71F-490B-96CD-222F0C93BF94</string>
-		</dict>
-		<key>D8844540-10DE-43FF-BFD9-A896C2AF704A</key>
-		<dict>
-			<key>auxiliaryLogUniqueIdentifier</key>
-			<string>A728C16C-931D-49C5-8035-4700F347AAD4</string>
-			<key>auxiliaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>0</integer>
-			</dict>
-			<key>className</key>
-			<string>IDESchemeActionsInvocationRecord</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>com.apple.dt.unit.cocoaUnitTest</string>
-			<key>fileName</key>
-			<string>Run-Tests-CI-2024.04.05_21-45-43--0300.xcresult</string>
-			<key>hasAuxiliaryLog</key>
-			<true/>
-			<key>hasCoverageData</key>
-			<true/>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-				<key>totalCodeCoverage</key>
-				<real>0.91891891891891897</real>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>0</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>Tests-CI project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>Tests-CI</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Run Tests-CI</string>
-			<key>timeStartedRecording</key>
-			<real>734057143.42342401</real>
-			<key>timeStoppedRecording</key>
-			<real>0.0</real>
-			<key>title</key>
-			<string>Run Tests-CI</string>
-			<key>uniqueIdentifier</key>
-			<string>D8844540-10DE-43FF-BFD9-A896C2AF704A</string>
+			<string>5C186E74-6ACE-47FE-9B13-E79C77C90F46</string>
 		</dict>
 	</dict>
 </dict>

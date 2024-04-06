@@ -6,7 +6,7 @@
 	<integer>11</integer>
 	<key>logs</key>
 	<dict>
-		<key>0CE8FE05-A44B-4C05-8F6B-CCFEA0162FB6</key>
+		<key>0DD36EBB-244F-4937-B208-1D8DB9D3163C</key>
 		<dict>
 			<key>className</key>
 			<string>IDECommandLineBuildLog</string>
@@ -15,49 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>0CE8FE05-A44B-4C05-8F6B-CCFEA0162FB6.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>0</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>Tests-CI project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>Tests-CI</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Testing project Tests-CI with scheme Tests-CI</string>
-			<key>timeStartedRecording</key>
-			<real>734057148.22030699</real>
-			<key>timeStoppedRecording</key>
-			<real>734057148.822258</real>
-			<key>title</key>
-			<string>Testing project Tests-CI with scheme Tests-CI</string>
-			<key>uniqueIdentifier</key>
-			<string>0CE8FE05-A44B-4C05-8F6B-CCFEA0162FB6</string>
-		</dict>
-		<key>A728C16C-931D-49C5-8035-4700F347AAD4</key>
-		<dict>
-			<key>className</key>
-			<string>IDECommandLineBuildLog</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>A728C16C-931D-49C5-8035-4700F347AAD4.xcactivitylog</string>
+			<string>0DD36EBB-244F-4937-B208-1D8DB9D3163C.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -82,15 +40,15 @@
 			<key>signature</key>
 			<string>Building project Tests-CI with scheme Tests-CI</string>
 			<key>timeStartedRecording</key>
-			<real>734057143.42210603</real>
+			<real>734057891.56231797</real>
 			<key>timeStoppedRecording</key>
-			<real>734057148.21273196</real>
+			<real>734057895.61531997</real>
 			<key>title</key>
 			<string>Building project Tests-CI with scheme Tests-CI</string>
 			<key>uniqueIdentifier</key>
-			<string>A728C16C-931D-49C5-8035-4700F347AAD4</string>
+			<string>0DD36EBB-244F-4937-B208-1D8DB9D3163C</string>
 		</dict>
-		<key>EA7BE1FA-7EC3-47C2-BCC3-C2524D90F523</key>
+		<key>2223E99B-F67F-424F-8530-DD1D59FA9A06</key>
 		<dict>
 			<key>className</key>
 			<string>IDECommandLineBuildLog</string>
@@ -99,7 +57,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>EA7BE1FA-7EC3-47C2-BCC3-C2524D90F523.xcactivitylog</string>
+			<string>2223E99B-F67F-424F-8530-DD1D59FA9A06.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -124,13 +82,55 @@
 			<key>signature</key>
 			<string>Testing project Tests-CI with scheme Tests-CI</string>
 			<key>timeStartedRecording</key>
-			<real>734056959.78296602</real>
+			<real>734057697.78438401</real>
 			<key>timeStoppedRecording</key>
-			<real>734056960.24183905</real>
+			<real>734057698.47374403</real>
 			<key>title</key>
 			<string>Testing project Tests-CI with scheme Tests-CI</string>
 			<key>uniqueIdentifier</key>
-			<string>EA7BE1FA-7EC3-47C2-BCC3-C2524D90F523</string>
+			<string>2223E99B-F67F-424F-8530-DD1D59FA9A06</string>
+		</dict>
+		<key>AADBE523-69F8-4E62-9796-EF89FBE3CAB4</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>AADBE523-69F8-4E62-9796-EF89FBE3CAB4.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Tests-CI project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Tests-CI</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Testing project Tests-CI with scheme Tests-CI</string>
+			<key>timeStartedRecording</key>
+			<real>734057895.62371695</real>
+			<key>timeStoppedRecording</key>
+			<real>734057896.10766399</real>
+			<key>title</key>
+			<string>Testing project Tests-CI with scheme Tests-CI</string>
+			<key>uniqueIdentifier</key>
+			<string>AADBE523-69F8-4E62-9796-EF89FBE3CAB4</string>
 		</dict>
 	</dict>
 </dict>
