@@ -6,7 +6,7 @@
 	<integer>11</integer>
 	<key>logs</key>
 	<dict>
-		<key>95EC1006-CB68-48D4-9329-79F84B272EE7</key>
+		<key>0CE8FE05-A44B-4C05-8F6B-CCFEA0162FB6</key>
 		<dict>
 			<key>className</key>
 			<string>IDECommandLineBuildLog</string>
@@ -15,7 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>95EC1006-CB68-48D4-9329-79F84B272EE7.xcactivitylog</string>
+			<string>0CE8FE05-A44B-4C05-8F6B-CCFEA0162FB6.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -38,17 +38,17 @@
 			<key>schemeIdentifier-sharedScheme</key>
 			<integer>1</integer>
 			<key>signature</key>
-			<string>Building project Tests-CI with scheme Tests-CI</string>
+			<string>Testing project Tests-CI with scheme Tests-CI</string>
 			<key>timeStartedRecording</key>
-			<real>734056959.03372502</real>
+			<real>734057148.22030699</real>
 			<key>timeStoppedRecording</key>
-			<real>734056959.73838794</real>
+			<real>734057148.822258</real>
 			<key>title</key>
-			<string>Building project Tests-CI with scheme Tests-CI</string>
+			<string>Testing project Tests-CI with scheme Tests-CI</string>
 			<key>uniqueIdentifier</key>
-			<string>95EC1006-CB68-48D4-9329-79F84B272EE7</string>
+			<string>0CE8FE05-A44B-4C05-8F6B-CCFEA0162FB6</string>
 		</dict>
-		<key>D17320F9-F774-4B70-AB55-2D9AEA3157B8</key>
+		<key>A728C16C-931D-49C5-8035-4700F347AAD4</key>
 		<dict>
 			<key>className</key>
 			<string>IDECommandLineBuildLog</string>
@@ -57,7 +57,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>D17320F9-F774-4B70-AB55-2D9AEA3157B8.xcactivitylog</string>
+			<string>A728C16C-931D-49C5-8035-4700F347AAD4.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -80,15 +80,15 @@
 			<key>schemeIdentifier-sharedScheme</key>
 			<integer>1</integer>
 			<key>signature</key>
-			<string>Building project Tests-CI for testing with scheme Tests-CI</string>
+			<string>Building project Tests-CI with scheme Tests-CI</string>
 			<key>timeStartedRecording</key>
-			<real>734055546.12234294</real>
+			<real>734057143.42210603</real>
 			<key>timeStoppedRecording</key>
-			<real>734055550.29787803</real>
+			<real>734057148.21273196</real>
 			<key>title</key>
-			<string>Building project Tests-CI for testing with scheme Tests-CI</string>
+			<string>Building project Tests-CI with scheme Tests-CI</string>
 			<key>uniqueIdentifier</key>
-			<string>D17320F9-F774-4B70-AB55-2D9AEA3157B8</string>
+			<string>A728C16C-931D-49C5-8035-4700F347AAD4</string>
 		</dict>
 		<key>EA7BE1FA-7EC3-47C2-BCC3-C2524D90F523</key>
 		<dict>

@@ -5,13 +5,12 @@
 //  Created by Matheus Gois on 05/04/24.
 //
 
-import SwiftUI
 import SwiftData
+import SwiftUI
 
 extension ContentView {
     @Observable
     class ViewModel {
-
         var modelContext: ModelContext
         var items = [Item]()
 
@@ -42,7 +41,7 @@ extension ContentView {
                 let descriptor = FetchDescriptor<Item>(sortBy: [.init(\.timestamp)])
                 items = try modelContext.fetch(descriptor)
             } catch {
-                print("Fetch failed")
+                print("Fetch failed!")
             }
         }
     }
