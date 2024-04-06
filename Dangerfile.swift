@@ -229,12 +229,12 @@ fileprivate extension ReleaseValidator {
 fileprivate extension UnitTestValidator {
     func checkUnitTestSummary() {
         let file = "./build/reports/errors.json"
-        // if FileManager.default.fileExists(atPath: file) {
-        //     let summary = XCodeSummary(filePath: file) { result in
-        //         result.category != .warning
-        //     }
+        if FileManager.default.fileExists(atPath: file) {
+            let summary = XCodeSummary(filePath: file) { result in
+                result.category != .warning
+            }
             summary.report()
-        // }
+        }
     }
 
     func checkUnitTestCoverage() {
