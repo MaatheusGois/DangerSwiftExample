@@ -41,7 +41,7 @@ extension ContentView {
                 let descriptor = FetchDescriptor<Item>(sortBy: [.init(\.timestamp)])
                 items = try modelContext.fetch(descriptor)
             } catch {
-                print("Fetch failed!")
+                print("Fetch failed!!")
             }
         }
     }
