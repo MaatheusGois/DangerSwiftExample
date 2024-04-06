@@ -2,7 +2,8 @@ desc "Run the tests and prepare for Danger"
 lane :test do |options|
 
   scan(
-    derived_data_path: "temp/derived/",
+    # derived_data_path: "temp/derived/",
+    result_bundle_path: "temp/derived/"
     result_bundle: true,
     code_coverage: true
   )

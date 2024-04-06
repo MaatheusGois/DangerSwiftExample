@@ -238,9 +238,10 @@ fileprivate extension UnitTestValidator {
     }
 
     func checkUnitTestCoverage() {
-        let folder = "./temp/derived"
-        if FileManager.default.fileExists(atPath: "\(folder)/info.plist") {
-            Coverage.xcodeBuildCoverage(.derivedDataFolder(folder), minimumCoverage: 70)
-        }
+        Coverage.xcodeBuildCoverage(
+            .xcresultBundle("fastlane/test_output/Tests-CI.xcresult"),
+            minimumCoverage: 70,
+            excludedTargets: ["DangerSwiftCoverageTests.xctest"]
+        )
     }
 }
