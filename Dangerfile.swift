@@ -228,7 +228,7 @@ fileprivate extension ReleaseValidator {
 
 fileprivate extension UnitTestValidator {
     func checkUnitTestSummary() {
-        let file = "build/reports/errors.json"
+        let file = "./build/reports/errors.json"
         if FileManager.default.fileExists(atPath: file) {
             let summary = XCodeSummary(filePath: file) { result in
                 result.category != .warning
@@ -238,7 +238,7 @@ fileprivate extension UnitTestValidator {
     }
 
     func checkUnitTestCoverage() {
-        let folder = "temp/derived"
+        let folder = "./temp/derived"
         if FileManager.default.fileExists(atPath: "\(folder)/info.plist") {
             Coverage.xcodeBuildCoverage(.derivedDataFolder(folder), minimumCoverage: 70)
         }
