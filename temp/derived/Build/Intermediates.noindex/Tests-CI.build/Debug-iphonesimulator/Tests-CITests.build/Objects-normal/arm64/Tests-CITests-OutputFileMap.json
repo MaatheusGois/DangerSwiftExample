@@ -1,0 +1,28 @@
+{
+  "" : {
+    "diagnostics" : "/Users/goisma/repos/Tests-CI/temp/derived/Build/Intermediates.noindex/Tests-CI.build/Debug-iphonesimulator/Tests-CITests.build/Objects-normal/arm64/Tests-CITests-master.dia",
+    "emit-module-dependencies" : "/Users/goisma/repos/Tests-CI/temp/derived/Build/Intermediates.noindex/Tests-CI.build/Debug-iphonesimulator/Tests-CITests.build/Objects-normal/arm64/Tests-CITests-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/goisma/repos/Tests-CI/temp/derived/Build/Intermediates.noindex/Tests-CI.build/Debug-iphonesimulator/Tests-CITests.build/Objects-normal/arm64/Tests-CITests-master-emit-module.dia",
+    "swift-dependencies" : "/Users/goisma/repos/Tests-CI/temp/derived/Build/Intermediates.noindex/Tests-CI.build/Debug-iphonesimulator/Tests-CITests.build/Objects-normal/arm64/Tests-CITests-master.swiftdeps"
+  },
+  "/Users/goisma/repos/Tests-CI/Tests-CITests/ContentView.ViewModel.Tests.swift" : {
+    "const-values" : "/Users/goisma/repos/Tests-CI/temp/derived/Build/Intermediates.noindex/Tests-CI.build/Debug-iphonesimulator/Tests-CITests.build/Objects-normal/arm64/ContentView.ViewModel.Tests.swiftconstvalues",
+    "dependencies" : "/Users/goisma/repos/Tests-CI/temp/derived/Build/Intermediates.noindex/Tests-CI.build/Debug-iphonesimulator/Tests-CITests.build/Objects-normal/arm64/ContentView.ViewModel.Tests.d",
+    "diagnostics" : "/Users/goisma/repos/Tests-CI/temp/derived/Build/Intermediates.noindex/Tests-CI.build/Debug-iphonesimulator/Tests-CITests.build/Objects-normal/arm64/ContentView.ViewModel.Tests.dia",
+    "index-unit-output-path" : "/Tests-CI.build/Debug-iphonesimulator/Tests-CITests.build/Objects-normal/arm64/ContentView.ViewModel.Tests.o",
+    "llvm-bc" : "/Users/goisma/repos/Tests-CI/temp/derived/Build/Intermediates.noindex/Tests-CI.build/Debug-iphonesimulator/Tests-CITests.build/Objects-normal/arm64/ContentView.ViewModel.Tests.bc",
+    "object" : "/Users/goisma/repos/Tests-CI/temp/derived/Build/Intermediates.noindex/Tests-CI.build/Debug-iphonesimulator/Tests-CITests.build/Objects-normal/arm64/ContentView.ViewModel.Tests.o",
+    "swift-dependencies" : "/Users/goisma/repos/Tests-CI/temp/derived/Build/Intermediates.noindex/Tests-CI.build/Debug-iphonesimulator/Tests-CITests.build/Objects-normal/arm64/ContentView.ViewModel.Tests.swiftdeps",
+    "swiftmodule" : "/Users/goisma/repos/Tests-CI/temp/derived/Build/Intermediates.noindex/Tests-CI.build/Debug-iphonesimulator/Tests-CITests.build/Objects-normal/arm64/ContentView.ViewModel.Tests~partial.swiftmodule"
+  },
+  "/Users/goisma/repos/Tests-CI/Tests-CITests/Tests.Helpers.swift" : {
+    "const-values" : "/Users/goisma/repos/Tests-CI/temp/derived/Build/Intermediates.noindex/Tests-CI.build/Debug-iphonesimulator/Tests-CITests.build/Objects-normal/arm64/Tests.Helpers.swiftconstvalues",
+    "dependencies" : "/Users/goisma/repos/Tests-CI/temp/derived/Build/Intermediates.noindex/Tests-CI.build/Debug-iphonesimulator/Tests-CITests.build/Objects-normal/arm64/Tests.Helpers.d",
+    "diagnostics" : "/Users/goisma/repos/Tests-CI/temp/derived/Build/Intermediates.noindex/Tests-CI.build/Debug-iphonesimulator/Tests-CITests.build/Objects-normal/arm64/Tests.Helpers.dia",
+    "index-unit-output-path" : "/Tests-CI.build/Debug-iphonesimulator/Tests-CITests.build/Objects-normal/arm64/Tests.Helpers.o",
+    "llvm-bc" : "/Users/goisma/repos/Tests-CI/temp/derived/Build/Intermediates.noindex/Tests-CI.build/Debug-iphonesimulator/Tests-CITests.build/Objects-normal/arm64/Tests.Helpers.bc",
+    "object" : "/Users/goisma/repos/Tests-CI/temp/derived/Build/Intermediates.noindex/Tests-CI.build/Debug-iphonesimulator/Tests-CITests.build/Objects-normal/arm64/Tests.Helpers.o",
+    "swift-dependencies" : "/Users/goisma/repos/Tests-CI/temp/derived/Build/Intermediates.noindex/Tests-CI.build/Debug-iphonesimulator/Tests-CITests.build/Objects-normal/arm64/Tests.Helpers.swiftdeps",
+    "swiftmodule" : "/Users/goisma/repos/Tests-CI/temp/derived/Build/Intermediates.noindex/Tests-CI.build/Debug-iphonesimulator/Tests-CITests.build/Objects-normal/arm64/Tests.Helpers~partial.swiftmodule"
+  }
+}

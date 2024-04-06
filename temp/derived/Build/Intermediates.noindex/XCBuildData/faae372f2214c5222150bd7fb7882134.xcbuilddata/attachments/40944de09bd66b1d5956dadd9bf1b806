@@ -1,0 +1,58 @@
+{
+  "" : {
+    "diagnostics" : "/Users/goisma/repos/Tests-CI/temp/derived/Build/Intermediates.noindex/Tests-CI.build/Debug-iphonesimulator/Tests-CI.build/Objects-normal/arm64/Tests-CI-master.dia",
+    "emit-module-dependencies" : "/Users/goisma/repos/Tests-CI/temp/derived/Build/Intermediates.noindex/Tests-CI.build/Debug-iphonesimulator/Tests-CI.build/Objects-normal/arm64/Tests-CI-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/goisma/repos/Tests-CI/temp/derived/Build/Intermediates.noindex/Tests-CI.build/Debug-iphonesimulator/Tests-CI.build/Objects-normal/arm64/Tests-CI-master-emit-module.dia",
+    "swift-dependencies" : "/Users/goisma/repos/Tests-CI/temp/derived/Build/Intermediates.noindex/Tests-CI.build/Debug-iphonesimulator/Tests-CI.build/Objects-normal/arm64/Tests-CI-master.swiftdeps"
+  },
+  "/Users/goisma/repos/Tests-CI/temp/derived/Build/Intermediates.noindex/Tests-CI.build/Debug-iphonesimulator/Tests-CI.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+    "const-values" : "/Users/goisma/repos/Tests-CI/temp/derived/Build/Intermediates.noindex/Tests-CI.build/Debug-iphonesimulator/Tests-CI.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftconstvalues",
+    "dependencies" : "/Users/goisma/repos/Tests-CI/temp/derived/Build/Intermediates.noindex/Tests-CI.build/Debug-iphonesimulator/Tests-CI.build/Objects-normal/arm64/GeneratedAssetSymbols.d",
+    "diagnostics" : "/Users/goisma/repos/Tests-CI/temp/derived/Build/Intermediates.noindex/Tests-CI.build/Debug-iphonesimulator/Tests-CI.build/Objects-normal/arm64/GeneratedAssetSymbols.dia",
+    "index-unit-output-path" : "/Tests-CI.build/Debug-iphonesimulator/Tests-CI.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "llvm-bc" : "/Users/goisma/repos/Tests-CI/temp/derived/Build/Intermediates.noindex/Tests-CI.build/Debug-iphonesimulator/Tests-CI.build/Objects-normal/arm64/GeneratedAssetSymbols.bc",
+    "object" : "/Users/goisma/repos/Tests-CI/temp/derived/Build/Intermediates.noindex/Tests-CI.build/Debug-iphonesimulator/Tests-CI.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "swift-dependencies" : "/Users/goisma/repos/Tests-CI/temp/derived/Build/Intermediates.noindex/Tests-CI.build/Debug-iphonesimulator/Tests-CI.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftdeps",
+    "swiftmodule" : "/Users/goisma/repos/Tests-CI/temp/derived/Build/Intermediates.noindex/Tests-CI.build/Debug-iphonesimulator/Tests-CI.build/Objects-normal/arm64/GeneratedAssetSymbols~partial.swiftmodule"
+  },
+  "/Users/goisma/repos/Tests-CI/Tests-CI/Content/ContentView.swift" : {
+    "const-values" : "/Users/goisma/repos/Tests-CI/temp/derived/Build/Intermediates.noindex/Tests-CI.build/Debug-iphonesimulator/Tests-CI.build/Objects-normal/arm64/ContentView.swiftconstvalues",
+    "dependencies" : "/Users/goisma/repos/Tests-CI/temp/derived/Build/Intermediates.noindex/Tests-CI.build/Debug-iphonesimulator/Tests-CI.build/Objects-normal/arm64/ContentView.d",
+    "diagnostics" : "/Users/goisma/repos/Tests-CI/temp/derived/Build/Intermediates.noindex/Tests-CI.build/Debug-iphonesimulator/Tests-CI.build/Objects-normal/arm64/ContentView.dia",
+    "index-unit-output-path" : "/Tests-CI.build/Debug-iphonesimulator/Tests-CI.build/Objects-normal/arm64/ContentView.o",
+    "llvm-bc" : "/Users/goisma/repos/Tests-CI/temp/derived/Build/Intermediates.noindex/Tests-CI.build/Debug-iphonesimulator/Tests-CI.build/Objects-normal/arm64/ContentView.bc",
+    "object" : "/Users/goisma/repos/Tests-CI/temp/derived/Build/Intermediates.noindex/Tests-CI.build/Debug-iphonesimulator/Tests-CI.build/Objects-normal/arm64/ContentView.o",
+    "swift-dependencies" : "/Users/goisma/repos/Tests-CI/temp/derived/Build/Intermediates.noindex/Tests-CI.build/Debug-iphonesimulator/Tests-CI.build/Objects-normal/arm64/ContentView.swiftdeps",
+    "swiftmodule" : "/Users/goisma/repos/Tests-CI/temp/derived/Build/Intermediates.noindex/Tests-CI.build/Debug-iphonesimulator/Tests-CI.build/Objects-normal/arm64/ContentView~partial.swiftmodule"
+  },
+  "/Users/goisma/repos/Tests-CI/Tests-CI/Content/ContentViewModel.swift" : {
+    "const-values" : "/Users/goisma/repos/Tests-CI/temp/derived/Build/Intermediates.noindex/Tests-CI.build/Debug-iphonesimulator/Tests-CI.build/Objects-normal/arm64/ContentViewModel.swiftconstvalues",
+    "dependencies" : "/Users/goisma/repos/Tests-CI/temp/derived/Build/Intermediates.noindex/Tests-CI.build/Debug-iphonesimulator/Tests-CI.build/Objects-normal/arm64/ContentViewModel.d",
+    "diagnostics" : "/Users/goisma/repos/Tests-CI/temp/derived/Build/Intermediates.noindex/Tests-CI.build/Debug-iphonesimulator/Tests-CI.build/Objects-normal/arm64/ContentViewModel.dia",
+    "index-unit-output-path" : "/Tests-CI.build/Debug-iphonesimulator/Tests-CI.build/Objects-normal/arm64/ContentViewModel.o",
+    "llvm-bc" : "/Users/goisma/repos/Tests-CI/temp/derived/Build/Intermediates.noindex/Tests-CI.build/Debug-iphonesimulator/Tests-CI.build/Objects-normal/arm64/ContentViewModel.bc",
+    "object" : "/Users/goisma/repos/Tests-CI/temp/derived/Build/Intermediates.noindex/Tests-CI.build/Debug-iphonesimulator/Tests-CI.build/Objects-normal/arm64/ContentViewModel.o",
+    "swift-dependencies" : "/Users/goisma/repos/Tests-CI/temp/derived/Build/Intermediates.noindex/Tests-CI.build/Debug-iphonesimulator/Tests-CI.build/Objects-normal/arm64/ContentViewModel.swiftdeps",
+    "swiftmodule" : "/Users/goisma/repos/Tests-CI/temp/derived/Build/Intermediates.noindex/Tests-CI.build/Debug-iphonesimulator/Tests-CI.build/Objects-normal/arm64/ContentViewModel~partial.swiftmodule"
+  },
+  "/Users/goisma/repos/Tests-CI/Tests-CI/Content/Item.swift" : {
+    "const-values" : "/Users/goisma/repos/Tests-CI/temp/derived/Build/Intermediates.noindex/Tests-CI.build/Debug-iphonesimulator/Tests-CI.build/Objects-normal/arm64/Item.swiftconstvalues",
+    "dependencies" : "/Users/goisma/repos/Tests-CI/temp/derived/Build/Intermediates.noindex/Tests-CI.build/Debug-iphonesimulator/Tests-CI.build/Objects-normal/arm64/Item.d",
+    "diagnostics" : "/Users/goisma/repos/Tests-CI/temp/derived/Build/Intermediates.noindex/Tests-CI.build/Debug-iphonesimulator/Tests-CI.build/Objects-normal/arm64/Item.dia",
+    "index-unit-output-path" : "/Tests-CI.build/Debug-iphonesimulator/Tests-CI.build/Objects-normal/arm64/Item.o",
+    "llvm-bc" : "/Users/goisma/repos/Tests-CI/temp/derived/Build/Intermediates.noindex/Tests-CI.build/Debug-iphonesimulator/Tests-CI.build/Objects-normal/arm64/Item.bc",
+    "object" : "/Users/goisma/repos/Tests-CI/temp/derived/Build/Intermediates.noindex/Tests-CI.build/Debug-iphonesimulator/Tests-CI.build/Objects-normal/arm64/Item.o",
+    "swift-dependencies" : "/Users/goisma/repos/Tests-CI/temp/derived/Build/Intermediates.noindex/Tests-CI.build/Debug-iphonesimulator/Tests-CI.build/Objects-normal/arm64/Item.swiftdeps",
+    "swiftmodule" : "/Users/goisma/repos/Tests-CI/temp/derived/Build/Intermediates.noindex/Tests-CI.build/Debug-iphonesimulator/Tests-CI.build/Objects-normal/arm64/Item~partial.swiftmodule"
+  },
+  "/Users/goisma/repos/Tests-CI/Tests-CI/Tests_CIApp.swift" : {
+    "const-values" : "/Users/goisma/repos/Tests-CI/temp/derived/Build/Intermediates.noindex/Tests-CI.build/Debug-iphonesimulator/Tests-CI.build/Objects-normal/arm64/Tests_CIApp.swiftconstvalues",
+    "dependencies" : "/Users/goisma/repos/Tests-CI/temp/derived/Build/Intermediates.noindex/Tests-CI.build/Debug-iphonesimulator/Tests-CI.build/Objects-normal/arm64/Tests_CIApp.d",
+    "diagnostics" : "/Users/goisma/repos/Tests-CI/temp/derived/Build/Intermediates.noindex/Tests-CI.build/Debug-iphonesimulator/Tests-CI.build/Objects-normal/arm64/Tests_CIApp.dia",
+    "index-unit-output-path" : "/Tests-CI.build/Debug-iphonesimulator/Tests-CI.build/Objects-normal/arm64/Tests_CIApp.o",
+    "llvm-bc" : "/Users/goisma/repos/Tests-CI/temp/derived/Build/Intermediates.noindex/Tests-CI.build/Debug-iphonesimulator/Tests-CI.build/Objects-normal/arm64/Tests_CIApp.bc",
+    "object" : "/Users/goisma/repos/Tests-CI/temp/derived/Build/Intermediates.noindex/Tests-CI.build/Debug-iphonesimulator/Tests-CI.build/Objects-normal/arm64/Tests_CIApp.o",
+    "swift-dependencies" : "/Users/goisma/repos/Tests-CI/temp/derived/Build/Intermediates.noindex/Tests-CI.build/Debug-iphonesimulator/Tests-CI.build/Objects-normal/arm64/Tests_CIApp.swiftdeps",
+    "swiftmodule" : "/Users/goisma/repos/Tests-CI/temp/derived/Build/Intermediates.noindex/Tests-CI.build/Debug-iphonesimulator/Tests-CI.build/Objects-normal/arm64/Tests_CIApp~partial.swiftmodule"
+  }
+}
