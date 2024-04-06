@@ -17,12 +17,14 @@ SwiftLint.lint(configFile: ".swiftlint.yml")
 
 internal class Validator {
     // MARK: Lifecycle
+    // Private initializer and shared instance for Validator.
 
     private init() {}
     internal static let shared = Validator()
     private var danger = Danger()
 
     // MARK: Properties
+    // Properties related to PR details and changes.
 
     private lazy var additions = danger.github.pullRequest.additions!
     private lazy var deletions = danger.github.pullRequest.deletions!
@@ -36,11 +38,11 @@ internal class Validator {
     private lazy var branchBaseName = danger.github.pullRequest.base.ref
 
     // Methods
+    // Methods for various validation checks.
 
     internal func validate() {
         checkSize()
         checkDescription()
-        checkReleases()
         checkUnitTest()
         checkTitle()
         checkAssignee()
@@ -53,19 +55,22 @@ internal class Validator {
 
 internal class DescriptionValidator {
     // MARK: Lifecycle
+    // Private initializer and shared instance for DescriptionValidator.
 
     private init() {}
     internal static let shared = DescriptionValidator()
     private var danger = Danger()
 
     // MARK: Properties
+    // Property to store the PR body.
 
     private lazy var body = danger.github.pullRequest.body ?? ""
 
     // Methods
+    // Method to validate PR description.
 
     internal func validate() {
-        let message = "PR não tem descrição. Você deve fornecer uma descrição das alterações feitas."
+        let message = "PR does not have a description. You must provide a description of the changes made."
 
         guard !body.isEmpty else {
             return fail(message)
@@ -73,28 +78,16 @@ internal class DescriptionValidator {
     }
 }
 
-internal class ReleaseValidator {
-    // MARK: Lifecycle
-
-    private init() {}
-    internal static let shared = ReleaseValidator()
-    private var danger = Danger()
-
-    // Methods
-
-    internal func validate() {
-        checkReleaseVersion()
-    }
-}
-
 internal class UnitTestValidator {
     // MARK: Lifecycle
+    // Private initializer and shared instance for UnitTestValidator.
 
     private init() {}
     internal static let shared = UnitTestValidator()
     private var danger = Danger()
 
     // Methods
+    // Methods for unit test validation.
 
     internal func validate() {
         checkUnitTestSummary()
@@ -103,15 +96,16 @@ internal class UnitTestValidator {
 }
 
 // MARK: Validator Methods
+// Extension with methods for Validator class.
 
 fileprivate extension Validator {
     func checkSize() {
         if (additions + deletions) > ValidationRules.bigPRThreshold {
             let message =
             """
-            O tamanho do PR parece relativamente grande. \
-            Se possível, no futuro se o PR contiver várias alterações, divida cada uma em um PR separado. \
-            Isto ajuda em uma revisão mais rápida e fácil.
+            The size of the PR seems relatively large. \
+            If possible, in the future if the PR contains multiple changes, split each into a separate PR. \
+            This helps in faster and easier review.
             """
             warn(message)
         }
@@ -119,10 +113,6 @@ fileprivate extension Validator {
 
     func checkDescription() {
         DescriptionValidator.shared.validate()
-    }
-
-    func checkReleases() {
-        ReleaseValidator.shared.validate()
     }
 
     func checkUnitTest() {
@@ -136,14 +126,14 @@ fileprivate extension Validator {
         ) != nil
 
         if !result {
-            let message = "O título do PR dever ser assim: [<i>Funcionalidade ou Flow</i>] <i>Qual o fluxo que foi feito</i>"
+            let message = "The PR title should be: [<i>Feature or Flow</i>] <i>What flow was done</i>"
             warn(message)
         }
     }
 
     func checkAssignee() {
         if danger.github.pullRequest.assignee == nil {
-            warn("Por gentileza, atribuir a você o PR.")
+            warn("Please assign yourself to the PR.")
         }
     }
 
@@ -151,7 +141,7 @@ fileprivate extension Validator {
         if changedFiles > ValidationRules.maxChangedFiles {
             let message =
             """
-            PR contém muitos arquivos alterados. Se possível, nas próximas vezes tente dividir em features menores.
+            PR contains too many changed files. If possible, next time try to split into smaller features.
             """
             warn(message)
         }
@@ -166,14 +156,14 @@ fileprivate extension Validator {
     func logResume() {
         let overview =
         """
-        O PR adicionou \(additions) e removeu \(deletions) linhas. \(changedFiles) arquivo(s) alterado(s).
+        The PR added \(additions) and removed \(deletions) lines. \(changedFiles) file(s) changed.
         """
 
         let seeOurDocumentation =
         """
-        Veja nossa documentação atualizada: <br/> \
-        <a href='https://github.pactual.net/Digital/digital-ios/wiki/Pull-Request'> \
-        Padrão, exemplo e boas práticas de Pull-Request</a>
+        Example Link: <br/> \
+        <a href=''> \
+        Link</a>
         """
 
         message(seeOurDocumentation)
@@ -182,6 +172,7 @@ fileprivate extension Validator {
 }
 
 // MARK: Constants
+// Constants related to validation rules.
 
 private enum ValidationRules {
     static let maxChangedFiles = 20
@@ -189,6 +180,7 @@ private enum ValidationRules {
 }
 
 // MARK: Extensions
+// Extension with additional file-related methods.
 
 fileprivate extension Danger.File {
     var isInSources: Bool { hasPrefix("Sources/") }
@@ -207,28 +199,12 @@ fileprivate extension Danger.File {
     }
 }
 
-// MARK: ReleaseValidator Methods
-
-fileprivate extension ReleaseValidator {
-    func checkReleaseVersion() {
-        let message =
-        """
-        Encontrado uma release em andamento ou publicada para essa versão. <br/> \
-        Por favor, atualize a versão no <b>.podspec</b> do modulo.
-        """
-
-        let file = "Danger-release-version-error.swift"
-        if FileManager.default.fileExists(atPath: file) {
-            fail(message)
-        }
-    }
-}
-
 // MARK: UnitTestValidator Methods
+// Extension with methods for UnitTestValidator class.
 
 fileprivate extension UnitTestValidator {
     func checkUnitTestSummary() {
-        let file = "./build/reports/errors.json"
+        let file = "build/reports/errors.json"
         if FileManager.default.fileExists(atPath: file) {
             let summary = XCodeSummary(filePath: file) { result in
                 result.category != .warning
