@@ -39,6 +39,7 @@
 		2EC7DFC72C1267F1005E58DF /* ViewModel.Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.Tests.swift; sourceTree = "<group>"; };
 		2EC7DFC82C1267F1005E58DF /* Tests+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Tests+Helpers.swift"; sourceTree = "<group>"; };
 		2EC7DFD12C12685B005E58DF /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2EC7DFDC2C126E7E005E58DF /* Tests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = Tests.xctestplan; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +111,7 @@
 		2EC7DFD22C12685B005E58DF /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				2EC7DFDC2C126E7E005E58DF /* Tests.xctestplan */,
 				2EC7DFC72C1267F1005E58DF /* ViewModel.Tests.swift */,
 				2EC7DFC82C1267F1005E58DF /* Tests+Helpers.swift */,
 			);
