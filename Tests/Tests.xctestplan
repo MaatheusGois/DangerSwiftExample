@@ -1,7 +1,7 @@
 {
   "configurations" : [
     {
-      "id" : "04818F94-946F-41C2-BFA3-E1F62E2065EE",
+      "id" : "C1740AFA-F6BF-4690-8C40-DD3519A8467B",
       "name" : "Configuration 1",
       "options" : {
 
@@ -9,13 +9,14 @@
     }
   ],
   "defaultOptions" : {
-
+    "testTimeoutsEnabled" : true
   },
   "testTargets" : [
     {
+      "parallelizable" : true,
       "target" : {
         "containerPath" : "container:Example.xcodeproj",
-        "identifier" : "2EC7DFD02C12685B005E58DF",
+        "identifier" : "2EC7DFE02C12726D005E58DF",
         "name" : "Tests"
       }
     }

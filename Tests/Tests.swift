@@ -6,30 +6,90 @@
 //
 
 import XCTest
+import SwiftData
+@testable import Example
 
-final class Tests: XCTestCase {
+extension ContentView.ViewModel: ViewModelTestable {}
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+final class ViewModelTests: XCTestCase {
+    @MainActor func testAppStartsEmpty() throws {
+        // Given
+        let sut = try make(
+            viewModel: ContentView.ViewModel.self
+        )
+
+        // When & Then
+        XCTAssertEqual(
+            sut.items.count,
+            0,
+            "There should be 0 items when the app is first launched."
+        )
     }
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    @MainActor func testCreatingSamplesWorks() throws {
+        // Given
+        let sut = try make(
+            viewModel: ContentView.ViewModel.self
+        )
+
+        // When
+        sut.addItem()
+        sut.addItem()
+        sut.addItem()
+
+        // Then
+        XCTAssertEqual(
+            sut.items.count,
+            3,
+            "There should be 3 items after adding sample data."
+        )
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
-    }
+    @MainActor func testCreaatingAndRemoving() throws {
+        // Given
+        let sut = try make(
+            viewModel: ContentView.ViewModel.self
+        )
 
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
+        // When
+        sut.addItem()
+        sut.addItem()
+        sut.deleteItems(
+            offsets: .init(
+                integer: 0
+            )
+        )
 
+        // Then
+        XCTAssertEqual(
+            sut.items.count,
+            1,
+            "There should be 1 items after adding sample data."
+        )
+    }
+}
+
+// MARK: - Helpers
+
+protocol ViewModelTestable {
+    init(
+        modelContext: ModelContext
+    )
+}
+
+extension XCTestCase {
+    @MainActor func make<T: ViewModelTestable>(
+        viewModel: T.Type
+    ) throws -> T {
+        let config = ModelConfiguration(
+            isStoredInMemoryOnly: true
+        )
+        let container = try ModelContainer(
+            for: Item.self,
+            configurations: config
+        )
+        return T(
+            modelContext: container.mainContext
+        )
+    }
 }
