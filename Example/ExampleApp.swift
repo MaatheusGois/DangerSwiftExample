@@ -1,6 +1,6 @@
 //
 //  Tests_CIApp.swift
-//  Tests-CI
+//  Example
 //
 //  Created by Matheus Gois on 05/04/24.
 //
@@ -9,7 +9,7 @@ import SwiftUI
 import SwiftData
 
 @main
-struct Tests_CIApp: App {
+struct ExampleApp: App {
     var container: ModelContainer = {
         let schema = Schema([
             Item.self

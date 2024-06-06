@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  Tests-CI
+//  Example
 //
 //  Created by Matheus Gois on 05/04/24.
 //
@@ -49,8 +49,3 @@ struct ContentView: View {
         }
     }
 }
-
-// #Preview {
-//    ContentView(viewModel: <#ContentView.ViewModel#>)
-//        .modelContainer(for: Item.self, inMemory: true)
-// }
