@@ -40,7 +40,7 @@
             parallelizable = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2EC7DFD02C12685B005E58DF"
+               BlueprintIdentifier = "2EC7DFE02C12726D005E58DF"
                BuildableName = "Tests.xctest"
                BlueprintName = "Tests"
                ReferencedContainer = "container:Example.xcodeproj">
@@ -51,18 +51,7 @@
             parallelizable = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2E0B58D72BC046CE00049F34"
-               BuildableName = "Tests-CIUITests.xctest"
-               BlueprintName = "Tests-CIUITests"
-               ReferencedContainer = "container:Example.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO"
-            parallelizable = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2EC7DFD02C12685B005E58DF"
+               BlueprintIdentifier = "2EC7DFE02C12726D005E58DF"
                BuildableName = "Tests.xctest"
                BlueprintName = "Tests"
                ReferencedContainer = "container:Example.xcodeproj">
@@ -97,6 +86,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "2E0B58BA2BC046CC00049F34"
+            BuildableName = "Example.app"
+            BlueprintName = "Example"
+            ReferencedContainer = "container:Example.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

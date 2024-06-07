@@ -20,7 +20,7 @@ jobs:
 
       - name: Setup Danger
         run: |
-          git clone https://github.com/MaatheusGois/DangerSwift && rm -rf DangerSwift/.git
+          git clone https://github.com/MaatheusGois/DangerSwift && rm -rf DangerSwift/.git Readme.md
           mv DangerSwift/* .
 
       - name: Test Stage
